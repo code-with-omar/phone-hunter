@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone Hounter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="container">
+        <h2 class="text-center text-primary mt-5 mb-5">Welcome to Phone Hunter</h2>
+
+
+        <div class="d-flex justify-content-center my-3">
+            <input id="textField" type="search" name="" id="input" placeholder="Search Phone"
+                class="rounded-1 border-black ps-2"><button id="searchPhone"
+                class="btn btn-outline-primary ms-2">Search</button>
+
+        </div>
+    </header>
+    <main class="container">
+        <!-- phone loading  -->
+        <section>
+            <div id="main-contianer" class="row row-cols-1 row-cols-md-3 g-4 ">
+            </div>
+
+        </section>
+
+        <!-- spiner loader  -->
+
+        <section id="loader" class="d-none">
+            <div class="text-center justify-content-center align-items-center d-flex" style="height:500px">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+        <!-- modal (which is use shows all phone detais)   -->
+        <section>
+
+            <!-- Modal -->
+            <div class="modal fade h-100" id="mobileDetailsShow" tabindex="-1" aria-labelledby="mobileDetailsShowLabel"
+                aria-hidden="true">
+                <div id="display-mobile-details" class="modal-dialog modal-dialog-centered">
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+    <!-- user js  -->
+    <script src="./main.js"></script>
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
